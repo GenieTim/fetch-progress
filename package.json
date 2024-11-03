@@ -15,8 +15,8 @@
   "homepage": "https://github.com/samundrak/fetch-progress",
   "devDependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "gh-pages": "^1.1.0",
+    "gh-pages": "^6.2.0",
     "parcel-bundler": "^1.7.0",
-    "preact": "^8.2.7"
+    "preact": "^10.24.3"
   }
 }
