@@ -9,10 +9,15 @@ declare namespace fetchProgress {
     export type FetchProgressInterceptor = (response: Response) => Promise<Response>;
 
     export interface FetchProgressData {
-        total: number;
+        length: number;
         transferred: number;
         speed: number;
-        eta: number;
+        initial: boolean;
+        emitDelay: number;
+        eventStart: number;
+        percentage: number;
+        getRemainingBytes(): number;
+        getEta(): number;
     }
 
     export interface FetchProgressInitOptions {
